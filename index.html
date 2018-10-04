@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML-Fullscreen</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<style>
+		html, body {
+			padding: 20px;
+			margin: 0;
+		}
+
+		#banner {
+			background-image: url("./images/upper-shape.png"), url("./images/left-shape.png"), url("./images/people-full.png");
+			width: 100%;
+			max-width: 800px;
+			height: 600px;
+			background-origin: border-box;
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: relative;
+		}
+
+		#home {
+			background-image: url("./images/homes.png");
+			background-origin: border-box;
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			width: 205px;
+			height: 127px;
+
+			position: absolute;
+			bottom: 5%;
+			right: 3.8%;
+		}
+
+		#time-text {
+			background-image: url("./images/shrjancelov-jamanak@.png");
+			background-origin: border-box;
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			width: 242px;
+			height: 24px;
+
+			position: absolute;
+			top: 6.5%;
+			left: 8.4%;
+
+		}
+
+		#varker-text {
+			background-image: url("./images/varker.png");
+			background-origin: border-box;
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			width: 242px;
+			height: 58px;
+
+			position: absolute;
+			top: 13.3%;
+			left: 8.4%;
+		}
+
+		#logo {
+			background-image: url("./images/logo.png");
+			background-origin: border-box;
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			width: 261px;
+			height: 33px;
+
+			position: absolute;
+			top: 11%;
+			right: 5.9%;
+		}
+
+		#fb-logo {
+			background-image: url("./images/fb-logo.png");
+			background-origin: border-box;
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			width: 33px;
+			height: 33px;
+
+			position: absolute;
+			right: 30.6%;
+			bottom: 11.8%;
+		}
+
+        #sksats {
+            background-image: url("./images/sksats.png");
+            background-origin: border-box;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            width: 88px;
+            height: 18px;
+
+            position: absolute;
+            top: 45%;
+            left: 8.7%;
+        }
+
+		#eight-percent-small {
+			background-image: url("./images/8-percent-small.png");
+			background-origin: border-box;
+			background-position: top;
+			background-repeat: no-repeat;
+
+			width: 101px;
+			height: 45px;
+
+			position: absolute;
+			left: 8.7%;
+			top: 54%;
+		}
+
+		#eight-percent-big {
+			background-image: url("./images/8-percent-big.png");
+			background-origin: border-box;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			width: 148px;
+			height: 66px;
+
+			position: absolute;
+			left: 9%;
+			top: 53.5%;
+
+            display: none;
+		}
+
+        #tarekan {
+            background-image: url("images/tarekan.png");
+            background-origin: border-box;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            width: 303px;
+            height: 72px;
+
+            position: absolute;
+            left: 8.6%;
+            top: 68.4%;
+        }
+
+        #pastaci {
+            background-image: url("images/pastaci.png");
+            background-origin: border-box;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            width: 400px;
+            height: 18px;
+
+            position: absolute;
+            left: 8.6%;
+            bottom: 12.5%
+        }
+
+		#minchev {
+			background-image: url("images/minchev.png");
+			background-origin: border-box;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			width: 116px;
+			height: 21px;
+
+			position: absolute;
+			left: 8.6%;
+			bottom: 45.5%
+		}
+
+		#twenty-years-small {
+			background-image: url("images/20-small.png");
+			background-origin: border-box;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			width: 78px;
+			height: 42px;
+
+			position: absolute;
+			left: 8.6%;
+			bottom: 36%
+		}
+
+		#twenty-years-big {
+			background-image: url("images/20-big.png");
+			background-origin: border-box;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			width: 120px;
+			height: 67px;
+
+			position: absolute;
+			left: 9%;
+			bottom: 31%;
+
+			display: none;
+		}
+
+		#years {
+			background-image: url("images/years.png");
+			background-origin: border-box;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			width: 123px;
+			height: 31px;
+
+			position: absolute;
+			left: 9%;
+			bottom: 22%
+		}
+
+		#jamket {
+			background-image: url("images/marman-jamket.png");
+			background-origin: border-box;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			width: 304px;
+			height: 24px;
+
+			position: absolute;
+			left: 8.4%;
+			bottom: 11.8%;
+		}
+
+		#animation-container-2 {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="banner">
+		<div id="time-text"></div>
+		<div id="varker-text"></div>
+
+		<div id="animation-container-1">
+			<div id="sksats"></div>
+			<div id="eight-percent-small"></div>
+			<div id="eight-percent-big"></div>
+			<div id="tarekan"></div>
+			<div id="pastaci"></div>
+		</div>
+
+		<div id="animation-container-2">
+			<div id="minchev"></div>
+			<div id="twenty-years-small"></div>
+			<div id="twenty-years-big"></div>
+			<div id="years"></div>
+			<div id="jamket"></div>
+		</div>
+
+		<div id="fb-logo"></div>
+		<div id="home"></div>
+		<div id="logo"></div>
+	</div>
+
+    <script>
+        window.onload = function () {
+            toggleVisibility();
+        };
+
+        function toggleVisibility() {
+        	var $eightSmall = document.getElementById('eight-percent-small'),
+		        $eightBig = document.getElementById('eight-percent-big'),
+				$twentySmall = document.getElementById('twenty-years-small'),
+				$twentyBig = document.getElementById('twenty-years-big'),
+				$animationContainer1 = document.getElementById('animation-container-1'),
+				$animationContainer2 = document.getElementById('animation-container-2');
+
+			// setInterval(function () {
+		     //    $eightSmall.style.display = 'none';
+		     //    $eightBig.style.display = 'block';
+			// }, 1000);
+			//
+			// setInterval(function () {
+		     //    $eightSmall.style.display = 'block';
+		     //    $eightBig.style.display = 'none';
+			// }, 2000);
+			//
+			// setInterval(function () {
+			// 	$animationContainer1.style.display = 'none';
+			// 	$animationContainer2.style.display = 'block';
+			// }, 3000);
+			//
+			// setInterval(function () {
+			// 	$animationContainer1.style.display = 'none';
+			// 	$animationContainer2.style.display = 'block';
+			// }, 4000);
+
+
+			setInterval(function () {
+			   $eightSmall.style.display = 'none';
+			   $eightBig.style.display = 'block';
+			}, 1000);
+
+			setInterval(function () {
+			   $eightSmall.style.display = 'block';
+			   $eightBig.style.display = 'none';
+
+				$animationContainer1.style.display = 'none';
+				$animationContainer2.style.display = 'block';
+			}, 2000);
+
+			// setInterval(function () {
+			// 	$eightSmall.style.display = 'none';
+			// 	$eightBig.style.display = 'block';
+			//
+			// 	$animationContainer1.style.display = 'none';
+			// 	$animationContainer2.style.display = 'block';
+			// }, 3000);
+
+			// setInterval(function () {
+			// 	$twentySmall.style.display = 'none';
+			// 	$twentyBig.style.display = 'block';
+			// }, 4000);
+
+			// setInterval(function () {
+			// 	$twentySmall.style.display = 'block';
+			// 	$twentyBig.style.display = 'none';
+			//
+			// 	$animationContainer2.style.display = 'none';
+			// 	$animationContainer1.style.display = 'block';
+			// }, 5000);
+        }
+    </script>
+</body>
+</html>
